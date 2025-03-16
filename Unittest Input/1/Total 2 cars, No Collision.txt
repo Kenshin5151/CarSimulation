@@ -1,0 +1,11 @@
+5 5
+1
+CarA
+1 2 N
+LFRF
+1
+CarB
+3 3 E
+FRFLF
+2
+2

@@ -1,0 +1,11 @@
+10 10
+1
+CarA
+1 2 N
+FFRFFFFRRL
+1
+CarB
+7 8 W
+FFLFFFFFFF
+2
+2

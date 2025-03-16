@@ -1,0 +1,20 @@
+500 500
+Invalid Selection
+Invalid Selection
+Invalid Selection
+Invalid Selection
+Invalid Selection
+1
+CarA
+3 3 E
+FRFFLF
+1
+CarB
+6 6 S
+LFFFRFF
+1
+CarC
+2 5 W
+RFFLFRFL
+2
+2

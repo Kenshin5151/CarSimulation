@@ -1,0 +1,19 @@
+10 10
+1
+CarA
+2 2 N
+FRFRF
+1
+CarB
+2 2 E
+FRFRF
+1
+CarC
+3 2 S
+FRFRF
+1
+CarD
+4 2 W
+FRFRF
+2
+2
