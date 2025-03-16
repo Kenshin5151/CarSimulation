@@ -19,13 +19,13 @@ COMMANDS = ['L', 'R', 'F']
 
 # Configure logging
 # logging.basicConfig(filename="../Output/car_simulation_test.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
-# logging.basicConfig(filename="../Output/car_simulation.log", level=logging.INFO, format="%(message)s")
+logging.basicConfig(filename="../Output/car_simulation.log", level=logging.INFO, format="%(message)s")
 
 class PrintLog:
     def print_log(message):
         if 'pydevd' in sys.modules:
             print(f"{message}")
-        # logging.info( f"{message}")
+        logging.info( f"{message}")
 
 class Car:
     def __init__(self, name, x, y, direction, commands):

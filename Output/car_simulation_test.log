@@ -165,3 +165,64 @@ TEST LOG START: -------------------------------------------------- 2025-03-17 00
 All assertion(s) passed.
 
 TEST LOG END: ---------------------------------------------------- 2025-03-17 00:10:03
+
+TEST LOG START: -------------------------------------------------- 2025-03-17 01:22:32
+
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 2 : Start_A_Test_Method
+ 2 : TestCar.test_initial_position() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 7 : Start_A_Test_Method
+ 7 : TestCar.test_move_forward_out_of_bounds() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 6 : Start_A_Test_Method
+ 6 : TestCar.test_move_forward_out_of_bounds_x_only() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 5 : Start_A_Test_Method
+ 5 : TestCar.test_move_forward_within_bounds() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 8 : Start_A_Test_Method
+ 8 : TestCar.test_process_command() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 9 : Start_A_Test_Method
+ 9 : TestCar.test_process_multiple_commands() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 3 : Start_A_Test_Method
+ 3 : TestCar.test_rotate_left() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 4 : Start_A_Test_Method
+ 4 : TestCar.test_rotate_right() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+11 : Start_A_Test_Method
+11 : TestSimulation.test_car_added_to_simulation() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+14 : Start_A_Test_Method
+14 : TestSimulation.test_reset_simulation() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+12 : Start_A_Test_Method
+12 : TestSimulation.test_run_simulation_no_collision() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+13 : Start_A_Test_Method
+13 : TestSimulation.test_run_simulation_with_collision() passed
+16 : Start_A_Test_Method
+16 : TestValidInput.test_get_valid_input_invalid_then_valid() passed
+17 : Start_A_Test_Method
+17 : TestValidInput.test_get_valid_input_loop() passed
+15 : Start_A_Test_Method
+15 : TestValidInput.test_get_valid_input_valid() passed
+
+All assertion(s) passed.
+
+TEST LOG END: ---------------------------------------------------- 2025-03-17 01:22:32
