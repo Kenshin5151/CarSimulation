@@ -10,11 +10,22 @@
 # ============================================================
 
 import sys
+import logging
+from datetime import datetime
 
 DIRECTIONS = ['N', 'E', 'S', 'W']
 MOVES = {'N': (0, 1), 'E': (1, 0), 'S': (0, -1), 'W': (-1, 0)}
 COMMANDS = ['L', 'R', 'F']
 
+# Configure logging
+# logging.basicConfig(filename="../Output/car_simulation_test.log", level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
+# logging.basicConfig(filename="../Output/car_simulation.log", level=logging.INFO, format="%(message)s")
+
+class PrintLog:
+    def print_log(message):
+        if 'pydevd' in sys.modules:
+            print(f"{message}")
+        # logging.info( f"{message}")
 
 class Car:
     def __init__(self, name, x, y, direction, commands):
@@ -29,13 +40,11 @@ class Car:
 
     def rotate_left(self):
         self.direction = DIRECTIONS[(DIRECTIONS.index(self.direction) - 1) % 4]
-        if 'pydevd' in sys.modules:
-            print(f"Car {self.name} stays at ({self.x}, {self.y})")
+        PrintLog.print_log(f"Car {self.name} stays at ({self.x}, {self.y})")
 
     def rotate_right(self):
         self.direction = DIRECTIONS[(DIRECTIONS.index(self.direction) + 1) % 4]
-        if 'pydevd' in sys.modules:
-            print(f"Car {self.name} stays at ({self.x}, {self.y})")
+        PrintLog.print_log(f"Car {self.name} stays at ({self.x}, {self.y})")
 
     def move_forward(self, width, height):
         if not self.collided:
@@ -43,17 +52,14 @@ class Car:
             new_x, new_y = self.x + dx, self.y + dy
             if 0 <= new_x < width and 0 <= new_y < height:
                 self.x, self.y = new_x, new_y
-                if 'pydevd' in sys.modules:
-                    print(f"Car {self.name} moves to ({self.x}, {self.y}) in direction {self.direction}")
+                PrintLog.print_log(f"Car {self.name} moves to ({self.x}, {self.y}) in direction {self.direction}")
             else:
-                if 'pydevd' in sys.modules:
-                    print(f"Car {self.name} stays at ({self.x}, {self.y})")
+                PrintLog.print_log(f"Car {self.name} stays at ({self.x}, {self.y})")
 
     def process_command(self, command, width, height):
         if not self.collided:
 
-            if 'pydevd' in sys.modules:
-                print(f"Car {self.name} processes command {command}")
+            PrintLog.print_log(f"Car {self.name} processes command {command}")
 
             if command == 'L':
                 self.rotate_left()
@@ -99,8 +105,7 @@ class Simulation:
 
                     active_commands = True
 
-                    if 'pydevd' in sys.modules:
-                        print(f"Step {step + 1} - Car {car.name}: {car.x}, {car.y}, {car.direction}")
+                    PrintLog.print_log(f"Step {step + 1} - Car {car.name}: {car.x}, {car.y}, {car.direction}")
 
                     # Pull the current command from the command list.
                     car.process_command(car.commands.pop(0), self.width, self.height)

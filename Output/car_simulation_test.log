@@ -1,0 +1,167 @@
+
+TEST LOG START: -------------------------------------------------- 2025-03-17 00:09:35
+
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 2 : Start_A_Test_Method
+ 2 : TestCar.test_initial_position() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 7 : Start_A_Test_Method
+Car TestCar stays at (4, 4)
+ 7 : TestCar.test_move_forward_out_of_bounds() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 6 : Start_A_Test_Method
+Car TestCar moves to (4, 1) in direction N
+ 6 : TestCar.test_move_forward_out_of_bounds_x_only() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 5 : Start_A_Test_Method
+Car TestCar moves to (0, 1) in direction N
+ 5 : TestCar.test_move_forward_within_bounds() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 8 : Start_A_Test_Method
+Car TestCar processes command F
+Car TestCar moves to (0, 1) in direction N
+Car TestCar processes command R
+Car TestCar stays at (0, 1)
+Car TestCar processes command F
+Car TestCar moves to (1, 1) in direction E
+ 8 : TestCar.test_process_command() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 9 : Start_A_Test_Method
+Car TestCar processes command F
+Car TestCar moves to (0, 1) in direction N
+Car TestCar processes command R
+Car TestCar stays at (0, 1)
+Car TestCar processes command F
+Car TestCar moves to (1, 1) in direction E
+Car TestCar processes command R
+Car TestCar stays at (1, 1)
+Car TestCar processes command F
+Car TestCar moves to (1, 0) in direction S
+ 9 : TestCar.test_process_multiple_commands() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 3 : Start_A_Test_Method
+Car TestCar stays at (0, 0)
+ 3 : TestCar.test_rotate_left() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 4 : Start_A_Test_Method
+Car TestCar stays at (0, 0)
+ 4 : TestCar.test_rotate_right() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+11 : Start_A_Test_Method
+11 : TestSimulation.test_car_added_to_simulation() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+14 : Start_A_Test_Method
+14 : TestSimulation.test_reset_simulation() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+12 : Start_A_Test_Method
+Step 1 - Car Car1: 0, 0, N
+Car Car1 processes command F
+Car Car1 moves to (0, 1) in direction N
+Step 1 - Car Car2: 1, 0, E
+Car Car2 processes command F
+Car Car2 moves to (2, 0) in direction E
+Step 2 - Car Car1: 0, 1, N
+Car Car1 processes command R
+Car Car1 stays at (0, 1)
+Step 2 - Car Car2: 2, 0, E
+Car Car2 processes command R
+Car Car2 stays at (2, 0)
+Step 3 - Car Car1: 0, 1, E
+Car Car1 processes command F
+Car Car1 moves to (1, 1) in direction E
+Step 3 - Car Car2: 2, 0, S
+Car Car2 processes command F
+Car Car2 stays at (2, 0)
+12 : TestSimulation.test_run_simulation_no_collision() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+13 : Start_A_Test_Method
+Step 1 - Car Car3: 0, 1, N
+Car Car3 processes command F
+Car Car3 moves to (0, 2) in direction N
+Step 1 - Car Car4: 0, 3, S
+Car Car4 processes command F
+Car Car4 moves to (0, 2) in direction S
+13 : TestSimulation.test_run_simulation_with_collision() passed
+16 : Start_A_Test_Method
+16 : TestValidInput.test_get_valid_input_invalid_then_valid() passed
+17 : Start_A_Test_Method
+17 : TestValidInput.test_get_valid_input_loop() passed
+15 : Start_A_Test_Method
+15 : TestValidInput.test_get_valid_input_valid() passed
+
+All assertion(s) passed.
+
+TEST LOG END: ---------------------------------------------------- 2025-03-17 00:09:35
+
+TEST LOG START: -------------------------------------------------- 2025-03-17 00:10:03
+
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 2 : Start_A_Test_Method
+ 2 : TestCar.test_initial_position() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 7 : Start_A_Test_Method
+ 7 : TestCar.test_move_forward_out_of_bounds() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 6 : Start_A_Test_Method
+ 6 : TestCar.test_move_forward_out_of_bounds_x_only() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 5 : Start_A_Test_Method
+ 5 : TestCar.test_move_forward_within_bounds() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 8 : Start_A_Test_Method
+ 8 : TestCar.test_process_command() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 9 : Start_A_Test_Method
+ 9 : TestCar.test_process_multiple_commands() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 3 : Start_A_Test_Method
+ 3 : TestCar.test_rotate_left() passed
+ 1 : Start_A_Test_Method
+ 1 : TestCar.setUp() passed
+ 4 : Start_A_Test_Method
+ 4 : TestCar.test_rotate_right() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+11 : Start_A_Test_Method
+11 : TestSimulation.test_car_added_to_simulation() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+14 : Start_A_Test_Method
+14 : TestSimulation.test_reset_simulation() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+12 : Start_A_Test_Method
+12 : TestSimulation.test_run_simulation_no_collision() passed
+10 : Start_A_Test_Method
+10 : TestSimulation.setUp() passed
+13 : Start_A_Test_Method
+13 : TestSimulation.test_run_simulation_with_collision() passed
+16 : Start_A_Test_Method
+16 : TestValidInput.test_get_valid_input_invalid_then_valid() passed
+17 : Start_A_Test_Method
+17 : TestValidInput.test_get_valid_input_loop() passed
+15 : Start_A_Test_Method
+15 : TestValidInput.test_get_valid_input_valid() passed
+
+All assertion(s) passed.
+
+TEST LOG END: ---------------------------------------------------- 2025-03-17 00:10:03
